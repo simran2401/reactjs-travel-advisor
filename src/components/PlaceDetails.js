@@ -82,7 +82,7 @@ export default function PlaceDetails({ place, placeRef, selected }) {
         )}
       </CardContent>
       <CardActions>
-        <Button
+        {/* <Button
           size='small'
           color='primary'
           onClick={() => window.open(place.web_url, '_blank')}
@@ -95,6 +95,13 @@ export default function PlaceDetails({ place, placeRef, selected }) {
           onClick={() => window.open(place.website, '_blank')}
         >
           Website
+        </Button> */}
+        <Button
+          size='small'
+          color='primary'
+          onClick={() => window.open(place.website, '_blank')}
+        >
+          Book Now
         </Button>
       </CardActions>
     </Card>
